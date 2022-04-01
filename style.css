@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header .contenedor .presentacion{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+padding: 15px 2px;
+
+}
+.promo-titulo {
+    background-image: url("./imagenes/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg");
+    
+    
+    color: #ffff;
+    
+}
+
+.insertar-promo-img {
+ width: 704px;
+height: 61px; 
+padding: 32px;
+gap: 16px;
+}
+
+.titulo {
+    display: grid;
+    grid-template-columns: 900px 1fr 1fr;
+    align-items: center;
+    background: rgb(174, 174, 230);
+}
+
+h2 {
+    font-size: 32px;
+    padding: 32px;
+}
+
+.contenedor-sw  {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    
+}
+
+.contenedor-c  {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    
+}
+
+.contenedor-d  {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    
+}
+
+.contenedor-form {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    background: rgb(233, 210, 233);
+}

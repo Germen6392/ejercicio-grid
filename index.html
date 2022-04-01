@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS GRID</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -23,15 +27,17 @@
   </header>
   <section id="promo">
     <div class="promo-titulo">
-        <img src="./imagenes/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg" alt="febrero promocion">
+        <!-- <img src="./imagenes/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg" alt="febrero promocion"> -->
         <h1 class="insertar-promo-img"> Diciembre promocional</h1>
         <p class="descripcion-promo"> Productos seleccionados con 33% de descuento</p>
         <button class="consola">Ver Consolas</button>
     </div>
   </section>
   <section id="star-wars">
-      <h2>Star Wars</h2>
-      <a href="http://#">Ver todo</a>
+    <div class="titulo">  
+        <h2>Star Wars</h2>
+        <a class="ver-todo" href="http://#">Ver todo</a><i class="flecha">flecha</i>
+    </div>
     <div class="contenedor-sw">
         <div class="grid-sw-item1">
             <img src="./imagenes/starwars1.png" alt="">
@@ -73,11 +79,13 @@
     </div>
   </section>
   <section id="consola">
-    <h2>Consolas</h2>
-    <a href="http://#">Ver todo</a>
+    <div class="titulo">
+        <h2>Consolas</h2>
+        <a href="http://#">Ver todo</a><i class="flecha">flecha</i>
+    </div>    
   <div class="contenedor-c">
       <div class="grid-c-item1">
-          <img src="./imagenes/consola1.png alt=">
+          <img src="./imagenes/consola1.png" alt=">
           <p class="nombre1">Producto XYZ</p>
           <p class="precio">$60</p>
           <a href="http://#">Ver Producto</a>
@@ -116,11 +124,13 @@
   </div>
 </section>
 <section id="diverso">
-    <h2>Diversos</h2>
-    <a href="http://#">Ver todo</a>
+    <div class="titulo">
+        <h2>Diversos</h2>
+        <a href="http://#">Ver todo</a><i class="flecha">flecha</i>
+    </div>
   <div class="contenedor-d">
       <div class="grid-d-item1">
-          <img src="./imagenes/diverso1.png alt=">
+          <img src="./imagenes/diverso1.png" alt=">
           <p class="nombre1">Producto XYZ</p>
           <p class="precio">$60</p>
           <a href="http://#">Ver Producto</a>
@@ -163,12 +173,14 @@
     <div class="img-form">
         <img src="./imagenes/Logo.png" alt="">
     </div>
-    <div class="enlaces">1</div>
-    <div class="enlaces">2</div>
-    <div class="enlaces">3</div>
-    <div class="enlaces">4</div>
-    <div class="enlaces">5</div>
-    <div class="enlaces">6</div>
+    <div class="enlace">
+        <div class="enlace1">1</div>
+        <div class="enlace2">2</div>
+        <div class="enlace3">3</div>
+        <div class="enlace4">4</div>
+        <div class="enlace5">5</div>
+        <div class="enlace6">6</div>
+    </div>
     <div class="form-cuerpo">
         <h4 class="titulo-form">Hable con nosotros</h4>
         <form action="">
