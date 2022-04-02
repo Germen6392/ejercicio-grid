@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -12,23 +13,94 @@ display: grid;
 grid-template-columns: repeat(3,1fr);
 gap: 20px;
 padding: 15px 2px;
+}
+
+/* BARRA DE BUSQUEDA */
+.buscar {
+    background: rgb(220, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    outline: none;
 
 }
+.buscador {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    float: left;
+    line-height: 60px;
+    transition: .3s;
+    width: 0;
+
+}
+
+.search {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #2a7ae4;
+    font-size: 30px;
+}
+
+.login {
+     
+    background: #2a7ae4;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    padding: 5px;
+      
+}
+
+/* =========== BANNER =========== */
+
 .promo-titulo {
-    background-image: url("./imagenes/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg");
-    
-    
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.199)), url("./imagenes/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    height: 50vh;
+    background-size: cover;
     color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
     
 }
 
 .insertar-promo-img {
- width: 704px;
-height: 61px; 
-padding: 32px;
+display: flex; 
+padding: 40px;
 gap: 16px;
-}
 
+}
+.descripcion-promo {
+    display: flex; 
+    padding: 40px;
+    gap: 16px;
+    
+    }
+    .consola {
+        display: flex; 
+        background: #2a7ae4;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        border: none;
+        padding: 10px;
+        margin-left: 20%;
+        
+        }
+    .consola:hover {
+        background: gray;
+        transition: 0.3s;
+    }    
 .titulo {
     display: grid;
     grid-template-columns: 900px 1fr 1fr;
@@ -67,4 +139,23 @@ h2 {
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
     background: rgb(233, 210, 233);
+}
+
+/* =======RESPONSIVE ======*/
+@media screen and (min-width:480px){
+    .buscar:hover > .buscador {
+        width: 190px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .buscar:hover > .buscador {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .buscar:hover > .buscador {
+        width: 500px;
+    }
 }
