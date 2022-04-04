@@ -29,12 +29,13 @@ padding: 15px 2px;
     border: none;
     background: none;
     outline: none;
-    color: white;
+    color: #2a7ae4;
     font-size: 20px;
     float: left;
     line-height: 60px;
     transition: .3s;
     width: 0;
+    text-align: center;
 
 }
 
@@ -56,6 +57,11 @@ padding: 15px 2px;
     border: none;
     padding: 5px;
       
+}
+
+.login:hover {
+    background: gray;
+    transition: .3s;
 }
 
 /* =========== BANNER =========== */
@@ -103,23 +109,56 @@ gap: 16px;
     }    
 .titulo {
     display: grid;
-    grid-template-columns: 900px 1fr 1fr;
+    grid-template-columns: 600px 300px 150px;
     align-items: center;
-    background: rgb(174, 174, 230);
+    justify-content: space-between;
+    
 }
-
+/* ============ PRODUCTOS ============ */
 h2 {
     font-size: 32px;
     padding: 32px;
 }
 
+.enlace-producto {
+    color: #2a7ae4;
+    margin: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ver-todo {
+    color: #2a7ae4;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.enlace-producto a i {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    align-content: center;
+    justify-items: center;
+}
+
+/* ========= STAR WARS ============= */
 .contenedor-sw  {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap: 10px;
     
 }
-
+.precio {
+    font-weight: 600;
+}
+/* ========= CONSOLAS ============= */
 .contenedor-c  {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -127,18 +166,84 @@ h2 {
     
 }
 
+/* ========= DIVERSOS ============= */
 .contenedor-d  {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap: 10px;
-    
+    margin: 20px;
 }
 
+/* ============= FORMULARIO CONTACTO =========== */
 .contenedor-form {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
-    background: rgb(233, 210, 233);
+    background: #eaf2fd;
+    padding: 20px;
+}
+
+.img-form {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+}
+
+.enlace {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+.empresa {
+    text-decoration: none;
+}
+
+.form-cuerpo {
+    display: grid;
+    grid-template-rows: max-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.nombre {
+    display: grid;
+    width: 90%;
+    margin: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    height: 56px;
+    font-family: "Raleway", sans-serif;
+    padding: 10px 12px;
+}
+
+#mensaje {
+    display: grid;
+    width: 90%;
+    margin: 10px;
+    border: none; 
+    font-size: 16px;
+    font-weight: 400;
+    height: 82px;
+    font-family: "Raleway", sans-serif;
+    padding: 10px 12px;
+}
+
+.enviar {
+    display: grid;
+    background: #2a7ae4;
+    color: white;
+    padding: 15px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar:hover{
+    background: gray;
+    transition: .3s;
 }
 
 /* =======RESPONSIVE ======*/

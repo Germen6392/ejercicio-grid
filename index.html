@@ -37,7 +37,9 @@
   <section id="star-wars">
     <div class="titulo">  
         <h2>Star Wars</h2>
-        <a class="ver-todo" href="http://#">Ver todo</a><i class="fa-solid fa-arrow-right-long"></i>
+            <div class="enlace-producto">    
+                <a class="ver-todo" href="http://#">Ver todo<i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>    
     </div>
     <div class="contenedor-sw">
         <div class="grid-sw-item1">
@@ -82,11 +84,13 @@
   <section id="consola">
     <div class="titulo">
         <h2>Consolas</h2>
-        <a href="http://#">Ver todo</a><i class="fa-solid fa-arrow-right-long"></i>
+            <div class="enlace-producto">
+                <a class="ver-todo" href="http://#">Ver todo<i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
     </div>    
   <div class="contenedor-c">
       <div class="grid-c-item1">
-          <img src="./imagenes/consola1.png" alt=">
+          <img src="./imagenes/consola1.png" alt="">
           <p class="nombre1">Producto XYZ</p>
           <p class="precio">$60</p>
           <a href="http://#">Ver Producto</a>
@@ -127,11 +131,13 @@
 <section id="diverso">
     <div class="titulo">
         <h2>Diversos</h2>
-        <a href="http://#">Ver todo</a><i class="fa-solid fa-arrow-right-long"></i>
+        <div class="enlace-producto">    
+            <a class="ver-todo" href="http://#">Ver todo<i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>    
     </div>
   <div class="contenedor-d">
       <div class="grid-d-item1">
-          <img src="./imagenes/diverso1.png" alt=">
+          <img src="./imagenes/diverso1.png" alt="">
           <p class="nombre1">Producto XYZ</p>
           <p class="precio">$60</p>
           <a href="http://#">Ver Producto</a>
@@ -175,17 +181,17 @@
         <img src="./imagenes/Logo.png" alt="">
     </div>
     <div class="enlace">
-        <div class="enlace1">Quienes somos</div>
-        <div class="enlace2">Política de privacidad</div>
-        <div class="enlace3">Programa de fidelidad</div>
-        <div class="enlace4">Nuestras Tiendas</div>
-        <div class="enlace5">Quiero ser franquiciado</div>
-        <div class="enlace6">Anuncia aquí</div>
+        <div class="enlace1"><a class="empresa" href="#">Quienes somos</a></div>
+        <div class="enlace2"><a class="empresa" href="#">Política de privacidad</a></div>
+        <div class="enlace3"><a class="empresa" href="#">Programa de fidelidad</a></div>
+        <div class="enlace4"><a class="empresa" href="#">Nuestras Tiendas</a></div>
+        <div class="enlace6"><a class="empresa" href="#">Anuncia aquí</a></div>
+        <div class="enlace5"><a class="empresa" href="#">Quiero ser franquiciado</a></div>
     </div>
     <div class="form-cuerpo">
         <h4 class="titulo-form">Hable con nosotros</h4>
         <form action="">
-            <input type="text" placeholder="Nombre">
+            <input class="nombre" type="text" placeholder="Nombre">
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
             <button class="enviar">Enviar mensaje</button>
         </form>
