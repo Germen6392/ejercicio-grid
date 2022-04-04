@@ -247,20 +247,107 @@ h2 {
 }
 
 /* =======RESPONSIVE ======*/
-@media screen and (min-width:480px){
+@media screen and (min-width:400px){
     .buscar:hover > .buscador {
         width: 190px;
     }
-}
+     /* STAR WARS */
+    .contenedor-sw  {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        
+        }
+/* CONSOLAS */
+        .contenedor-c  {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            
+        }
+/* DIVERSOS */
+        .contenedor-d  {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            margin: 20px;
+        }
+}    
+    @media screen and (max-width:400px) {
+        /* STAR WARS */
+        .contenedor-sw  {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        
+        }
+        /* CONSOLAS */
+        .contenedor-c  {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            
+        }
+        /* DIVERSOS */
+        .contenedor-d  {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            margin: 20px;
+        }
+    }
+
 
 @media screen and (min-width:768px){
     .buscar:hover > .buscador {
         width: 300px;
     }
+     /* STAR WARS */
+    .contenedor-sw  {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        
+        }
+/* CONSOLAS */
+        .contenedor-c  {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            
+        }
+/* DIVERSOS */
+        .contenedor-d  {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            margin: 20px;
+        }
 }
 
 @media screen and (min-width:1024px){
     .buscar:hover > .buscador {
         width: 500px;
     }
+ /* STAR WARS */
+    .contenedor-sw  {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 10px;
+        
+        }
+/* CONSOLAS */
+        .contenedor-c  {
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+            
+        }
+/* DIVERSOS */
+        .contenedor-d  {
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+            margin: 20px;
+        }
 }
