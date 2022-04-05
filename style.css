@@ -448,17 +448,18 @@ footer {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
-    
+    margin: 20px;
     }
 /* CONSOLAS */
     .contenedor-c  {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
-        
+        margin: 20px;
     }
 /* DIVERSOS */
-    .contenedor-d  {
+    
+.contenedor-d  {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
