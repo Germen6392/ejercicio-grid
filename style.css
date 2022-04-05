@@ -246,7 +246,15 @@ h2 {
     transition: .3s;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* =======RESPONSIVE ======*/
+
 @media screen and (min-width:400px){
     .buscar:hover > .buscador {
         width: 190px;
@@ -279,15 +287,17 @@ h2 {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
-        
+        margin: 20px;
         }
+
         /* CONSOLAS */
-        .contenedor-c  {
+        .contenedor-c {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 10px;
-            
+            margin: 20px;
         }
+
         /* DIVERSOS */
         .contenedor-d  {
             display: grid;
@@ -295,10 +305,19 @@ h2 {
             gap: 10px;
             margin: 20px;
         }
+
+        /* FORMULARIO CONTACTO */
+        .contenedor-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            background: #eaf2fd;
+            padding: 20px;
+        }
     }
 
 
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
     .buscar:hover > .buscador {
         width: 300px;
     }
@@ -322,6 +341,14 @@ h2 {
             grid-template-columns: repeat(3,1fr);
             gap: 10px;
             margin: 20px;
+        }
+        /* FORMULARIO CONTACTO */
+        .contenedor-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            background: #eaf2fd;
+            padding: 20px;
         }
 }
 
@@ -350,4 +377,49 @@ h2 {
             gap: 10px;
             margin: 20px;
         }
+}
+
+@media screen and (max-width:768px) {
+   
+    /* STAR WARS */
+   .contenedor-sw  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 20px;
+    }
+
+    /* CONSOLAS */
+    .contenedor-c {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: 20px;
+    }
+
+    /* DIVERSOS */
+    .contenedor-d  {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: 20px;
+    }
+
+    /* FORMULARIO CONTACTO */
+    .contenedor-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        background: #eaf2fd;
+        padding: 20px;
+    }
+
+    .form-cuerpo {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: flex-start;
+        align-content: start;
+        align-items: start;
+        justify-items: center;
+    }
 }
