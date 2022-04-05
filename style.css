@@ -107,14 +107,15 @@ gap: 16px;
         background: gray;
         transition: 0.3s;
     }    
+    
+/* ============ PRODUCTOS ============ */
 .titulo {
     display: grid;
-    grid-template-columns: 600px 300px 150px;
+    grid-template-columns: 600px 300px;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;
 }
-/* ============ PRODUCTOS ============ */
+
 h2 {
     font-size: 32px;
     padding: 32px;
@@ -422,4 +423,45 @@ footer {
         align-items: start;
         justify-items: center;
     }
+}
+
+/* RESPONSIVE TITULO PRODUCTOS */
+@media screen and (max-width:850px) {
+    .titulo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        justify-items: center;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 16px;
+        padding: 32px;
+    }
+}
+ 
+@media screen and (min-width:700px) and (max-width:1022px) {
+  /* STAR WARS */
+  .contenedor-sw  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    
+    }
+/* CONSOLAS */
+    .contenedor-c  {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        
+    }
+/* DIVERSOS */
+    .contenedor-d  {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin: 20px;
+    }  
 }
