@@ -413,6 +413,7 @@ footer {
         gap: 10px;
         background: #eaf2fd;
         padding: 20px;
+        justify-items: center;
     }
 
     .form-cuerpo {
