@@ -154,7 +154,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap: 10px;
-    
+    margin: 20px;
 }
 .precio {
     font-weight: 600;
@@ -164,7 +164,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap: 10px;
-    
+    margin: 20px;
 }
 
 /* ========= DIVERSOS ============= */
@@ -265,14 +265,14 @@ footer {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
-        
+        margin: 20px;
         }
 /* CONSOLAS */
         .contenedor-c  {
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 10px;
-            
+            margin: 20px;
         }
 /* DIVERSOS */
         .contenedor-d  {
@@ -327,14 +327,14 @@ footer {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
-        
+        margin: 20px;
         }
 /* CONSOLAS */
         .contenedor-c  {
             display: grid;
             grid-template-columns: repeat(3,1fr);
             gap: 10px;
-            
+            margin: 20px;
         }
 /* DIVERSOS */
         .contenedor-d  {
@@ -362,14 +362,14 @@ footer {
         display: grid;
         grid-template-columns: repeat(6,1fr);
         gap: 10px;
-        
+        margin: 20px;
         }
 /* CONSOLAS */
         .contenedor-c  {
             display: grid;
             grid-template-columns: repeat(6,1fr);
             gap: 10px;
-            
+            margin: 20px;
         }
 /* DIVERSOS */
         .contenedor-d  {
