@@ -59,9 +59,16 @@ padding: 15px 2px;
       
 }
 
+.irLogin {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
 .login:hover {
     background: gray;
     transition: .3s;
+    
 }
 
 /* =========== BANNER =========== */
