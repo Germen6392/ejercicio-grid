@@ -11,16 +11,16 @@
     grid-template-areas: "principal principal"
                         "boton boton"
                         "p1 p2"
-                        "p1 p2"
-                        "p1 p2"
-                        "p1 p2"
-                        "p1 p2"
-                        "p1 p2"
-                        "p1 p2"
-                        "p1 p2"
-                        "p1 p2";
+                        "p3 p4"
+                        "p5 p6"
+                        "p7 p8"
+                        "p9 p10"
+                        "p11 p12"
+                        "p13 p14"
+                        "p15 p16"
+                        "p17 p18";
     gap: 10px;
-    padding: 3px;                        
+    padding: 30px;                        
 }
 .productos {
     display: grid;
@@ -47,6 +47,16 @@
 .add {
     display: grid;
     grid-area: boton;
+    background: #2a7ae4;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    padding: 5px;
+}
+
+.add:hover {
+    background: gray;
+    transition: .3s;
 }
 
 .grid-sw-item1 {
@@ -191,4 +201,38 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+}
+
+@media screen and (min-width:768px) {
+    
+    
+    .principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .productos {
+        display: flex;
+        width: 768px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:1210px) {
+    .principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .productos {
+        display: flex;
+        width: 1190px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
